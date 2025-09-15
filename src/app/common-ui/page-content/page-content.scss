@@ -1,0 +1,23 @@
+.page-title {
+    position: sticky;
+    top: 4vh;
+
+    &.sticky-active::before {
+        content: '';
+        background: var(--dark-color);
+        position: absolute;
+        top: -32px;
+        bottom: -12px;
+        right: -2vw;
+        left: -2vw;
+        z-index: -1;
+    }
+}
+
+.about-me {}
+
+.work-history,
+.project-box {
+    display: grid;
+    grid-gap: 40px;
+}

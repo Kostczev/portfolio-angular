@@ -1,0 +1,39 @@
+<header class="header">
+    <h1 class="h1">Чурцев Константин</h1>
+    <h2 class="h2 mb24">Frontend-разработчки</h2>
+    <div class="text-regular wm-80p mb32">
+        Я создаю доступные, идеально проработанные цифровые продукты для интернета.
+    </div>
+
+    <div class="mb24">
+        <h3 class="h3 mb8">Навыки</h3>
+        <ul class="skill__wrapper mb12">
+            @for (skill of skills; track skill.name) {
+                <li class="skill-tag">{{ skill.name }}</li>
+            }
+        </ul>
+    </div>
+    
+    <div class="mb32">
+        <h3 class="h3 mb8">Осваевымые навыки</h3>
+        <ul class="skill__wrapper mb12">
+            @for (learnedSkill of learnedSkills; track learnedSkill.name) {
+                <li class="skill-tag">{{ learnedSkill.name }}</li>
+            }
+        </ul>
+    </div>  
+
+    <ul class="nav__wrapper display-none__mobile">
+        <li class="nav__link mb12">
+            <a href="#about-me">Обо мне</a>
+        </li>
+        <li class="nav__link mb12">
+            <a href="#work-history">Робота и учеба</a>
+        </li>
+        <li class="nav__link mb12">
+            <a href="#project">Проекты</a>
+        </li>
+    </ul>
+
+    <app-social-links></app-social-links> 
+</header>

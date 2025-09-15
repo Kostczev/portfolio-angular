@@ -1,0 +1,29 @@
+<div class="about-me mb100">
+    <h2 id="about-me" class="h2 display-none__desktop page-title mb24" appStickyObserver>Обо мне</h2>
+    <p class="text-regular mb12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro quia omnis deserunt
+        veritatis eaque, in necessitatibus eveniet cupiditate, quidem doloribus reprehenderit ex dolores ipsam rem aut
+        animi autem explicabo!</p>
+    <p class="text-regular mb12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro quia omnis deserunt
+        veritatis eaque, in necessitatibus eveniet cupiditate, quidem doloribus reprehenderit ex dolores ipsam rem aut
+        animi autem explicabo!</p>
+    <p class="text-regular mb12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro quia omnis deserunt
+        veritatis eaque, in necessitatibus eveniet cupiditate, quidem doloribus reprehenderit ex dolores ipsam rem aut
+        animi autem explicabo!</p>
+    <p class="text-regular mb12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro quia omnis deserunt
+        veritatis eaque, in necessitatibus eveniet cupiditate, quidem doloribus reprehenderit ex dolores ipsam rem aut
+        animi autem explicabo!</p>
+</div>
+
+<div class="work-history mb100">
+    <h2 id="work-history" class="h2 display-none__desktop page-title mb24" appStickyObserver>Робота и учеба</h2>
+    @for (job of jobs; track job.company) {
+        <app-work-history [job]="job"></app-work-history>
+    }
+</div>
+
+<div class="project-box mb100">
+    <h2 id="project" class="h2 display-none__desktop page-title mb24" appStickyObserver>Проекты</h2>
+    @for (project of projects; track project.title) {
+        <app-project-card [project]="project"></app-project-card>
+    }
+</div>

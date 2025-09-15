@@ -1,0 +1,21 @@
+@if (job(); as job) {
+<div class="job-card__period">{{job.period}}</div>
+<div class="job-card__content">
+    <div class="job-card__role mb8">
+        {{job.role}}
+    </div>
+    <h3 class="job-card__company h3 mb8">
+        {{job.company}}
+    </h3>
+    <div class="job-card__responsibilities mb20">
+        @for (responsibilitie of job.responsibilities; track responsibilitie) {
+            <p class="text-regular mb4">{{responsibilitie}}</p>
+        }
+    </div>
+    <ul class="skill__wrapper">
+        @for (skill of job.skills; track skill) {
+            <li class="skill-tag">{{ skill }}</li>
+        }
+    </ul>
+</div>
+}
