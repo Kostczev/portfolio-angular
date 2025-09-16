@@ -81,7 +81,7 @@ export class DataService {
         'Реализовал фильтрацию по сегментам и городам',
       ],
       techStack: [],
-      imageUrl: '/assets/imgs/blizko-page_our-cases.png',
+      imageUrl: '/portfolio-angular/assets/imgs/blizko-page_our-cases.png',
       projectUrl: 'https://kostczev.github.io/blizko-page_our-cases/',
       githubUrl: 'https://github.com/Kostczev/blizko-page_our-cases/'
     },
@@ -92,7 +92,7 @@ export class DataService {
         'Адаптивная верстка',
       ],
       techStack: [],
-      imageUrl: '/assets/imgs/blizko-page_promo-page.png',
+      imageUrl: '/portfolio-angular/assets/imgs/blizko-page_promo-page.png',
       projectUrl: 'https://kostczev.github.io/blizko-page_promo_page/',
       githubUrl: 'https://github.com/Kostczev/blizko-page_promo_page/'
     },
@@ -102,7 +102,7 @@ export class DataService {
         'Было оформленно на VEU.JS'
       ],
       techStack: [],
-      imageUrl: '/assets/imgs/old-portfolio.png',
+      imageUrl: '/portfolio-angular/assets/imgs/old-portfolio.png',
       projectUrl: 'https://kostczev.github.io/portfolio/',
       githubUrl: 'https://github.com/Kostczev/portfolio'
     },
