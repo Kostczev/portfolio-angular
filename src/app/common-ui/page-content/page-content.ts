@@ -5,10 +5,11 @@ import { Job } from '../../data/interface/data.interface';
 import { WorkHistory } from "../work-history/work-history";
 import { StickyObserverDirective } from "../../directive/sticky-observer.directive";
 import { ProjectCard } from "../project-card/project-card";
+import { Hero } from "../hero/hero";
 
 @Component({
   selector: 'app-page-content',
-  imports: [WorkHistory, StickyObserverDirective, ProjectCard],
+  imports: [WorkHistory, StickyObserverDirective, ProjectCard, Hero],
   templateUrl: './page-content.html',
   styleUrl: './page-content.scss'
 })
