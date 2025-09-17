@@ -29,6 +29,10 @@ body {
   background: var(--dark-color);
   color: var(--light-color);
 
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+
   &::before {
     content: '';
     position: fixed;
