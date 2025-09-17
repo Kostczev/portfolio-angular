@@ -11,13 +11,22 @@
         right: -2vw;
         left: -2vw;
         z-index: -1;
+        border-radius: 12px;
     }
 }
 
 .about-me {}
 
-.work-history,
-.project-box {
+.work-history__wrapper,
+.project-box__wrapper {
     display: grid;
     grid-gap: 40px;
+}
+
+@media (max-width: 700px) {
+    .page-title {
+        &.sticky-active::before {
+            border-radius: 0;
+        }
+    }
 }
